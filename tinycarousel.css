@@ -1,0 +1,95 @@
+#slider1 { 
+    max-width: 1300px;
+    margin: auto;
+    height: 1%; 
+    overflow: hidden; 
+    padding: 10px; 
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+#slider1 .viewport { 
+    width: 1020px; 
+    height: 500px; 
+    overflow: hidden; 
+    position: relative; 
+
+}
+#slider1 .buttons {
+    display: block;
+    margin: 30px 10px 0 0;
+     float: left; 
+    width: 35px;
+    height: 35px;
+    position: relative;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    line-height: 35px;
+    text-decoration: none;
+    font-size: 22px;
+    background-color: #f69615;
+}
+#slider1 .next {
+    margin: 30px 0 0 10px;
+}
+#slider1 .buttons:hover {
+    color: #f69615;
+    background: #fff;
+    transition: all 0.5s;
+}
+#slider1 .disable { 
+    visibility: hidden; 
+}
+#slider1 .overview { 
+    list-style: none; 
+    position: absolute; 
+    padding: 0; 
+    margin: 0; 
+    width: 240px; 
+    left: 0; 
+    top: 0; 
+    display:flex; 
+    justify-content: space-evenly;
+    align-items: center;
+}
+.overview li p{
+font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+.overview li h2{
+    color: #f69615;
+    font-size: 20px;
+    text-align: left;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#slider1 .overview li { 
+    margin: 0 20px 0 0; 
+    padding: 10px; 
+    width: 400px; 
+    height: 450px; 
+    background-color: white;
+    border: 5px solid #f69615; 
+   
+}    
+#slider1 .overview li img{
+    object-fit: cover;
+    width: 300px;
+}
+
+@media screen and (max-width:768px){
+    #slider1 .viewport { 
+        width:750px;
+    }
+}
+ @media screen and (max-width:480px){
+    #slider1 .viewport { 
+        width:320px;
+    }
+    #slider1 .overview li { 
+        width: 265px; 
+        }
+    #slider1 .overview li img{
+        width: 235px;
+    }
+ }
